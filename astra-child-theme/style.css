@@ -1,0 +1,48 @@
+/*
+Theme Name:  Astra Child Theme
+Theme URI:   https://wpastra.com/
+Author:      Gruppe 3
+Author URI:  https://eksamenckfredagschallenge.josephinenielsen.dk/
+Description: Child theme based on Astra.
+Version:     1.0.17
+Template:    astra
+*/
+
+/* Overflow hidden */
+html,
+body {
+    overflow-x: clip;
+}
+
+/* Fjern Astras padding/margin omkring indhold */
+.ast-container,
+.site-content .ast-container {
+    max-width: 100%;
+    padding: 0;
+}
+
+#primary,
+.site-main,
+.entry-content {
+    margin: 0;
+    padding: 0;
+}
+
+.ast-separate-container .ast-article-post,
+.ast-separate-container .ast-article-single {
+    padding: 0;
+    margin: 0;
+}
+
+.elementor-section.elementor-section-boxed > .elementor-container,
+.e-con.e-con-boxed > .e-con-inner {
+    max-width: 100%;
+}
+
+/* Instagram sektion responsiv */
+@media (max-width: 767px) {
+    .instabilleder,
+    .instabilleder img {
+        display: none !important;
+    }
+}
